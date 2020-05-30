@@ -5,7 +5,7 @@ import { ContractOptions } from '../core/contract';
 
 export type NEOContractParameter = string | number;
 
-export interface NEOEasyappOptions extends EasydappOptionsBase {
+export interface NEOEasydappOptions extends EasydappOptionsBase {
   type?: 'neo';
   contract?: NEOContractOptions;
 }
@@ -19,5 +19,5 @@ export interface NEOContractOptions extends ContractOptions {
 }
 
 export class NEOEasydapp {
-  constructor(public readonly options: NEOEasyappOptions) {}
+  constructor(public readonly options: NEOEasydappOptions) {}
 }

@@ -1,7 +1,7 @@
 {
   "name": "easydapp",
   "version": "0.0.0",
-  "description": "Quickly develop decentralized applications compatible with multiple blockchains based on a set of commonly used APIs.",
+  "description": "Quickly develop decentralized applications compatible with multiple chains.",
   "files": ["dist"],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

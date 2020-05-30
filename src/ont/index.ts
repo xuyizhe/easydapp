@@ -5,7 +5,7 @@ import { ContractOptions } from '../core/contract';
 
 export type ONTContractParameter = string | number;
 
-export interface ONTEasyappOptions extends EasydappOptionsBase {
+export interface ONTEasydappOptions extends EasydappOptionsBase {
   type?: 'ont';
   contract?: ONTContractOptions;
 }
@@ -19,5 +19,5 @@ export interface ONTContractOptions extends ContractOptions {
 }
 
 export class ONTEasydapp {
-  constructor(public readonly options: ONTEasyappOptions) {}
+  constructor(public readonly options: ONTEasydappOptions) {}
 }

@@ -1,13 +1,18 @@
 import { ETHEasydappOptions, ETHEasydapp } from './eth';
-import { ONTEasyappOptions, ONTEasydapp } from './ont';
-import { NEOEasyappOptions, NEOEasydapp } from './neo';
+import { ONTEasydappOptions, ONTEasydapp } from './ont';
+import { NEOEasydappOptions, NEOEasydapp } from './neo';
 
-export type DappOptions =
+export type EasydappInstance = ETHEasydapp | ONTEasydapp | NEOEasydapp;
+
+export type EasydappOptions =
   | ETHEasydappOptions
-  | ONTEasyappOptions
-  | NEOEasyappOptions;
+  | ONTEasydappOptions
+  | NEOEasydappOptions;
 
-export function createEasydapp(options: DappOptions) {
+export function createEasydapp(options: ETHEasydappOptions): ETHEasydapp;
+export function createEasydapp(options: ONTEasydappOptions): ONTEasydapp;
+export function createEasydapp(options: NEOEasydappOptions): NEOEasydapp;
+export function createEasydapp(options: EasydappOptions): EasydappInstance {
   switch (options.type) {
     case 'neo':
       return new NEOEasydapp(options);
