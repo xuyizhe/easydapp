@@ -1,8 +1,10 @@
 {
   "name": "easydapp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Quickly develop decentralized applications compatible with multiple chains.",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/module/index.js",
@@ -20,7 +22,11 @@
     "type": "git",
     "url": "git+https://github.com/xuyizhe/easydapp.git"
   },
-  "keywords": ["blockchain", "dapp", "ethereum"],
+  "keywords": [
+    "blockchain",
+    "dapp",
+    "ethereum"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xuyizhe/easydapp/issues"
