@@ -1,8 +1,6 @@
 import { ETHEasydapp } from '../lib/dapp';
-import { createEasydapp } from '@easydapp/core';
 
-const dapp = createEasydapp({
-  type: 'eth',
+const dapp = new ETHEasydapp({
   httpProvider: 'https://kovan.infura.io/v3/47e9cbe62fd645f5a20ee72f1854481c',
 });
 
