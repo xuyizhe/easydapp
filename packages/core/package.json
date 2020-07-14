@@ -1,6 +1,6 @@
 {
   "name": "@easydapp/core",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Quickly develop decentralized applications compatible with multiple chains.",
   "files": [
     "lib",
@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/xuyizhe/easydapp#readme",
   "dependencies": {
-    "@easydapp/utils": "^0.0.0"
+    "@easydapp/utils": "^0.0.2"
   }
 }

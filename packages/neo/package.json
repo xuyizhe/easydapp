@@ -1,8 +1,10 @@
 {
   "name": "@easydapp/neo",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "NEO extension for easydapp",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -16,7 +18,12 @@
     "url": "git+https://github.com/xuyizhe/easydapp.git",
     "directory": "packages/neo"
   },
-  "keywords": ["easydapp", "blockchain", "dapp", "neo"],
+  "keywords": [
+    "easydapp",
+    "blockchain",
+    "dapp",
+    "neo"
+  ],
   "author": "Yizhe Xu <barrenbass@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -24,6 +31,6 @@
   },
   "homepage": "https://github.com/xuyizhe/easydapp#readme",
   "dependencies": {
-    "@easydapp/core": "^0.0.0"
+    "@easydapp/core": "^0.0.2"
   }
 }

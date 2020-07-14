@@ -1,8 +1,10 @@
 {
   "name": "@easydapp/utils",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Utils for easydapp",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -16,7 +18,12 @@
     "url": "git+https://github.com/xuyizhe/easydapp.git",
     "directory": "packages/utils"
   },
-  "keywords": ["easydapp", "blockchain", "dapp", "utils"],
+  "keywords": [
+    "easydapp",
+    "blockchain",
+    "dapp",
+    "utils"
+  ],
   "author": "Yizhe Xu <barrenbass@gmail.com>",
   "license": "MIT",
   "bugs": {
