@@ -2,7 +2,7 @@
   "name": "easydapp",
   "private": true,
   "workspaces": [
-    "packages/core"
+    "packages/*"
   ],
   "scripts": {
     "test": "jest",
