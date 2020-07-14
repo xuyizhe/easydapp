@@ -17,9 +17,6 @@
     "build:main": "tsc -P ./tsconfig-release.json",
     "build:module": "tsc -P ./tsconfig-release.json --outDir 'dist/module' --target es6 --module es6"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xuyizhe/easydapp.git",
