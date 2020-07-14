@@ -3,7 +3,6 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "declaration": true,
     "noImplicitAny": true,
     "sourceMap": true,
     "esModuleInterop": true,
@@ -17,9 +16,9 @@
       "es2015.iterable",
       "es2015.generator"
     ],
-    "rootDir": "src",
+    "rootDir": "lib",
     "declaration": true
   },
-  "include": ["src/**/*.ts", "examples/**/*.ts"],
+  "include": ["lib/**/*.ts", "examples/**/*.ts"],
   "exclude": ["node_modules"]
 }
