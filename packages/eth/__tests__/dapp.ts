@@ -1,5 +1,5 @@
-import { ETHEasydapp } from '../';
-import { createEasydapp } from '../../';
+import { ETHEasydapp } from '../lib/dapp';
+import { createEasydapp } from '@easydapp/core';
 
 const dapp = createEasydapp({
   type: 'eth',

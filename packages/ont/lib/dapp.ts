@@ -1,7 +1,7 @@
 // TODO:
 
-import { AbstractEasydapp, EasydappOptionsBase } from '../core/dapp';
-import { ContractOptions } from '../core/contract';
+import { AbstractEasydapp, EasydappOptionsBase } from '@easydapp/core/lib/dapp';
+import { ContractOptions } from '@easydapp/core/lib/contract';
 
 export type ONTContractParameter = string | number;
 

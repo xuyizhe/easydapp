@@ -1,45 +1,21 @@
 {
   "name": "easydapp",
-  "version": "0.0.1",
-  "description": "Quickly develop decentralized applications compatible with multiple chains.",
-  "files": [
-    "dist"
+  "private": true,
+  "workspaces": [
+    "packages/core"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "module": "dist/module/index.js",
-  "directories": {
-    "example": "examples"
-  },
   "scripts": {
-    "prepublishOnly": "npm run build",
-    "test": "jest test",
-    "build": "npm run build:main; npm run build:module",
-    "build:main": "tsc -P ./tsconfig-release.json",
-    "build:module": "tsc -P ./tsconfig-release.json --outDir 'dist/module' --target es6 --module es6"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xuyizhe/easydapp.git"
-  },
-  "keywords": [
-    "blockchain",
-    "dapp",
-    "ethereum"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xuyizhe/easydapp/issues"
-  },
-  "homepage": "https://github.com/xuyizhe/easydapp#readme",
-  "dependencies": {
-    "tslib": "^2.0.0",
-    "web3": "^1.2.8"
+    "test": "jest",
+    "bootstrap": "lerna bootstrap --use-workspaces"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.3",
-    "jest": "^26.0.1",
-    "ts-jest": "^26.0.0",
-    "typescript": "^3.9.3"
+    "@types/jest": "^26.0.4",
+    "jest": "^26.1.0",
+    "lerna": "^3.22.1",
+    "ts-jest": "26.1.0",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
   }
 }

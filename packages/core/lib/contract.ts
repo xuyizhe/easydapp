@@ -1,4 +1,4 @@
-import { identity } from '../utils';
+import { identity } from '@easydapp/utils';
 
 export interface ContractOptions {
   address?: string;

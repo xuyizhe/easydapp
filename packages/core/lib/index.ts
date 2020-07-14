@@ -1,6 +1,6 @@
-import { ETHEasydappOptions, ETHEasydapp } from './eth';
-import { ONTEasydappOptions, ONTEasydapp } from './ont';
-import { NEOEasydappOptions, NEOEasydapp } from './neo';
+import { ETHEasydappOptions, ETHEasydapp } from '@easydapp/eth';
+import { ONTEasydappOptions, ONTEasydapp } from '@easydapp/ont';
+import { NEOEasydappOptions, NEOEasydapp } from '@easydapp/neo';
 
 export type EasydappInstance = ETHEasydapp | ONTEasydapp | NEOEasydapp;
 

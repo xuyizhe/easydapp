@@ -8,8 +8,8 @@ import {
 } from 'web3-core';
 import { BlockTransactionString, BlockTransactionObject } from 'web3-eth';
 import { AbiItem } from 'web3-utils';
-import { AbstractEasydapp, EasydappOptionsBase } from '../core/dapp';
-import { ContractOptions } from '../core/contract';
+import { AbstractEasydapp, EasydappOptionsBase } from '@easydapp/core/lib/dapp';
+import { ContractOptions } from '@easydapp/core/lib/contract';
 
 export type ETHContractParameter = string | number;
 
