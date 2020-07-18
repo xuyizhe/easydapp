@@ -1,6 +1,6 @@
 {
   "name": "@easydapp/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Quickly develop decentralized applications compatible with multiple chains.",
   "author": "Yizhe Xu <barrenbass@gmail.com>",
   "license": "MIT",
@@ -33,6 +33,6 @@
     "build": "tsc; tsc --outDir 'dist/es' --target es6 --module es6"
   },
   "dependencies": {
-    "@easydapp/utils": "^0.0.2"
+    "@easydapp/utils": "^0.0.3"
   }
 }

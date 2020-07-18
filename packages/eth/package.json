@@ -1,6 +1,6 @@
 {
   "name": "@easydapp/eth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ethereum extension for easydapp",
   "author": "Yizhe Xu <barrenbass@gmail.com>",
   "license": "MIT",
@@ -33,7 +33,7 @@
     "build": "tsc; tsc --outDir 'dist/es' --target es6 --module es6"
   },
   "dependencies": {
-    "@easydapp/core": "^0.0.2",
+    "@easydapp/core": "^0.0.3",
     "web3": "^1.2.9"
   }
 }

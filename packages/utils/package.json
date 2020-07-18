@@ -1,6 +1,6 @@
 {
   "name": "@easydapp/utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Utils for easydapp",
   "author": "Yizhe Xu <barrenbass@gmail.com>",
   "license": "MIT",
@@ -11,7 +11,9 @@
     "url": "https://github.com/xuyizhe/easydapp/issues"
   },
   "homepage": "https://github.com/xuyizhe/easydapp#readme",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -20,7 +22,12 @@
     "url": "git+https://github.com/xuyizhe/easydapp.git",
     "directory": "packages/utils"
   },
-  "keywords": ["easydapp", "blockchain", "dapp", "utils"],
+  "keywords": [
+    "easydapp",
+    "blockchain",
+    "dapp",
+    "utils"
+  ],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsc; tsc --outDir 'dist/es' --target es6 --module es6"

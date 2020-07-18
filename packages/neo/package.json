@@ -1,6 +1,6 @@
 {
   "name": "@easydapp/neo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NEO extension for easydapp",
   "author": "Yizhe Xu <barrenbass@gmail.com>",
   "license": "MIT",
@@ -8,7 +8,9 @@
     "url": "https://github.com/xuyizhe/easydapp/issues"
   },
   "homepage": "https://github.com/xuyizhe/easydapp#readme",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/es/index.js",
@@ -20,12 +22,17 @@
     "url": "git+https://github.com/xuyizhe/easydapp.git",
     "directory": "packages/neo"
   },
-  "keywords": ["easydapp", "blockchain", "dapp", "neo"],
+  "keywords": [
+    "easydapp",
+    "blockchain",
+    "dapp",
+    "neo"
+  ],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsc; tsc --outDir 'dist/es' --target es6 --module es6"
   },
   "dependencies": {
-    "@easydapp/core": "^0.0.2"
+    "@easydapp/core": "^0.0.3"
   }
 }
