@@ -1,0 +1,33 @@
+{
+  "name": "@easydapp/eth-test",
+  "private": true,
+  "version": "0.0.2",
+  "description": "Ethereum smart contracts example",
+  "author": "Yizhe Xu <barrenbass@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xuyizhe/easydapp/issues"
+  },
+  "homepage": "https://github.com/xuyizhe/easydapp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuyizhe/easydapp.git",
+    "directory": "packages/eth-test"
+  },
+  "keywords": [
+    "easydapp",
+    "blockchain",
+    "dapp",
+    "ethereum"
+  ],
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile"
+  },
+  "dependencies": {
+    "@easydapp/eth": "^0.0.2"
+  },
+  "devDependencies": {
+    "truffle": "^5.1.35"
+  }
+}

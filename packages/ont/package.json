@@ -2,14 +2,16 @@
   "name": "@easydapp/ont",
   "version": "0.0.2",
   "description": "ONT extension for easydapp",
-  "files": [
-    "lib"
-  ],
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "author": "Yizhe Xu <barrenbass@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xuyizhe/easydapp/issues"
   },
+  "homepage": "https://github.com/xuyizhe/easydapp#readme",
+  "files": ["dist"],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/es/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -18,18 +20,11 @@
     "url": "git+https://github.com/xuyizhe/easydapp.git",
     "directory": "packages/ont"
   },
-  "keywords": [
-    "easydapp",
-    "blockchain",
-    "dapp",
-    "ont"
-  ],
-  "author": "Yizhe Xu <barrenbass@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xuyizhe/easydapp/issues"
+  "keywords": ["easydapp", "blockchain", "dapp", "ont"],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc; tsc --outDir 'dist/es' --target es6 --module es6"
   },
-  "homepage": "https://github.com/xuyizhe/easydapp#readme",
   "dependencies": {
     "@easydapp/core": "^0.0.2"
   }

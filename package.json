@@ -1,12 +1,11 @@
 {
-  "name": "easydapp",
+  "name": "root",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "scripts": {
-    "test": "jest",
-    "bootstrap": "lerna bootstrap --use-workspaces"
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "test": "lerna run test",
+    "build": "lerna run build"
   },
   "devDependencies": {
     "@types/jest": "^26.0.4",

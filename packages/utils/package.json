@@ -2,14 +2,16 @@
   "name": "@easydapp/utils",
   "version": "0.0.2",
   "description": "Utils for easydapp",
-  "files": [
-    "lib"
-  ],
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "author": "Yizhe Xu <barrenbass@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/es/index.js",
+  "bugs": {
+    "url": "https://github.com/xuyizhe/easydapp/issues"
   },
+  "homepage": "https://github.com/xuyizhe/easydapp#readme",
+  "files": ["dist"],
   "publishConfig": {
     "access": "public"
   },
@@ -18,16 +20,9 @@
     "url": "git+https://github.com/xuyizhe/easydapp.git",
     "directory": "packages/utils"
   },
-  "keywords": [
-    "easydapp",
-    "blockchain",
-    "dapp",
-    "utils"
-  ],
-  "author": "Yizhe Xu <barrenbass@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xuyizhe/easydapp/issues"
-  },
-  "homepage": "https://github.com/xuyizhe/easydapp#readme"
+  "keywords": ["easydapp", "blockchain", "dapp", "utils"],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc; tsc --outDir 'dist/es' --target es6 --module es6"
+  }
 }

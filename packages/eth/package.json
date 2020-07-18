@@ -2,14 +2,24 @@
   "name": "@easydapp/eth",
   "version": "0.0.2",
   "description": "Ethereum extension for easydapp",
-  "files": [
-    "lib"
+  "author": "Yizhe Xu <barrenbass@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/es/index.js",
+  "keywords": [
+    "easydapp",
+    "blockchain",
+    "dapp",
+    "ethereum"
   ],
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "homepage": "https://github.com/xuyizhe/easydapp#readme",
+  "bugs": {
+    "url": "https://github.com/xuyizhe/easydapp/issues"
   },
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -18,18 +28,10 @@
     "url": "git+https://github.com/xuyizhe/easydapp.git",
     "directory": "packages/eth"
   },
-  "keywords": [
-    "easydapp",
-    "blockchain",
-    "dapp",
-    "ethereum"
-  ],
-  "author": "Yizhe Xu <barrenbass@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xuyizhe/easydapp/issues"
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc; tsc --outDir 'dist/es' --target es6 --module es6"
   },
-  "homepage": "https://github.com/xuyizhe/easydapp#readme",
   "dependencies": {
     "@easydapp/core": "^0.0.2",
     "web3": "^1.2.9"

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -16,9 +16,7 @@
       "es2015.iterable",
       "es2015.generator"
     ],
-    "rootDir": "lib",
     "declaration": true
   },
-  "include": ["lib/**/*.ts", "examples/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "**/__tests__/**/*.ts"]
 }
