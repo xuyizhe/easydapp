@@ -1,9 +1,6 @@
 # `@easydapp/utils`
 
-> TODO: description
-
-## Usage
-
-```
-// TODO: DEMONSTRATE API
+## Installation
+```shell
+npm install -g @easydapp/utils
 ```

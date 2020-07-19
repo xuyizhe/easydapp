@@ -1,7 +1,7 @@
 {
   "name": "easydapp",
   "version": "0.0.3",
-  "description": "Quickly develop decentralized applications compatible with multiple chains.",
+  "description": "Quickly develop a decentralized application compatible with multiple blockchain APIs.",
   "author": "Yizhe Xu <barrenbass@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -11,9 +11,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/es/index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "publishConfig": {
     "access": "public"
   },
@@ -22,12 +20,7 @@
     "url": "git+https://github.com/xuyizhe/easydapp.git",
     "directory": "packages/easydapp"
   },
-  "keywords": [
-    "easydapp",
-    "blockchain",
-    "dapp",
-    "ethereum"
-  ],
+  "keywords": ["easydapp", "blockchain", "dapp", "ethereum"],
   "scripts": {
     "prepublishOnly": "npm run build",
     "build": "tsc; tsc --outDir 'dist/es' --target es6 --module es6"
