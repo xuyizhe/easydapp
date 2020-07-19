@@ -52,10 +52,10 @@ const balance = await easydapp.getBalance();
 
 const block = await easydapp.getBlock('genesis');
 // block: {
-  hash: '0x00…00',
-  parentHash: '0x00…00',
-  …
-}
+//   hash: '0x00…00',
+//   parentHash: '0x00…00',
+//   …
+// }
 
 const accounts = await easydapp.getAccounts();
 // accounts: ['0x00…00', '0x00…01']
@@ -109,5 +109,3 @@ await easydapp.contract.dispatch('set', [3]);
 const result2 = await easydapp.contract.dispatch('get', []);
 // result: '3000000000000000000'
 ```
-
-All test examples are in `./packages/eth-test/test/easydapp-SimpleStorage.js`.
