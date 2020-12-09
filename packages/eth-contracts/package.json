@@ -1,5 +1,5 @@
 {
-  "name": "@easydapp/eth-test",
+  "name": "@easydapp/eth-contracts",
   "private": true,
   "version": "0.0.3",
   "description": "Ethereum smart contracts example",
@@ -12,7 +12,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xuyizhe/easydapp.git",
-    "directory": "packages/eth-test"
+    "directory": "packages/eth-contracts"
   },
   "keywords": [
     "easydapp",
@@ -22,7 +22,8 @@
   ],
   "scripts": {
     "test": "truffle test",
-    "compile": "truffle compile"
+    "compile": "truffle compile",
+    "build": "npm run compile"
   },
   "dependencies": {
     "@easydapp/eth": "^0.0.3"
